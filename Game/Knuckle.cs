@@ -38,6 +38,7 @@ namespace Game
                                     ArrOfKnuckles[i, j] = 0;
                                     ArrOfKnuckles[n, k] = q;
                                     x++;
+                                    Console.Clear();
                                     break;
                                 }
                             }
@@ -51,7 +52,7 @@ namespace Game
             }
             return q;
         }
-        public bool CheckTheKnuckles(int q)
+        private bool CheckTheKnuckles(int q)
         {
             int x = 0;
             for (int i = 0; i < ArrOfKnuckles.GetLength(0); i++)

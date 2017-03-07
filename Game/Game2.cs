@@ -21,7 +21,7 @@ namespace Game
             }
             RandomGen();
         }
-        public void RandomGen()
+        private void RandomGen()
         {
             Random gen = new Random();
             int x = 0, z = 0, c = 0;

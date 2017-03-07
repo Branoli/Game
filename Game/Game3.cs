@@ -38,13 +38,18 @@ namespace Game
         }
         public void HistoryYourMove()
         {
+            List<int> list = new List<int>();
             do
             {
-                Console.WriteLine("0 -> {0}", MovingTheKnuckles());
+                list.Add(MovingTheKnuckles());
                 PrintOfKnuckles();
             } while (CheckInBox() > 0);
-
-            Console.WriteLine("Вы это сделали!!!");
+            Console.WriteLine("Вы это сделали!!!\n\n\n История ходов");
+            Console.ForegroundColor = ConsoleColor.White;
+            for (int i = 0; i < list.Count; i++)
+            {
+                Console.Write("0 -> {0} ", list[i]);
+            }
         }
     }
 }
